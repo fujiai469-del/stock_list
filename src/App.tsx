@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import {
   Trophy,
   Cpu,
@@ -7,15 +7,11 @@ import {
   Globe,
   MapPin,
   Building2,
-  TrendingUp,
-  Search,
   Star,
   CheckCircle,
   Plane,
   HeartPulse,
-  Anchor,
   ShoppingBag,
-  Truck,
 } from "lucide-react";
 
 // 追加のアイコンコンポーネント
@@ -365,7 +361,6 @@ function HiddenGemsList() {
 
                 {/* 右側の情報 */}
                 <div className="flex-1 min-w-0">
-                  {/* min-w-0 でテキストはみ出し防止 */}
                   <div className="flex flex-wrap justify-between items-center mb-1 gap-2">
                     <div className="flex items-center gap-2 flex-wrap">
                       <span className="text-xs font-bold bg-slate-100 text-slate-600 px-2 py-1 rounded border border-slate-200">
@@ -415,7 +410,7 @@ function HiddenGemsList() {
   );
 }
 
-// ここが「アプリの入り口」
+// ここがアプリのエントリーポイント
 export default function App() {
   return <HiddenGemsList />;
 }
